@@ -1,0 +1,1589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xAr-YH-6Rh">
+                        <rect key="frame" x="0.0" y="118" width="393" height="54"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8bC-Xf-vdC" kind="relationship" relationship="rootViewController" id="abc-de-fgh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-27"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="xyz-12-345">
+            <objects>
+                <viewController id="8bC-Xf-vdC" customClass="LoginViewController" customModule="PuduPranav_ProjectFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-abc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="logo-img-001">
+                                <rect key="frame" x="146.66666666666666" y="232" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="logo-height"/>
+                                    <constraint firstAttribute="width" constant="100" id="logo-width"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get It Done" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="title-lbl-001">
+                                <rect key="frame" x="40" y="352" width="313" height="38"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="subtitle-lbl-001">
+                                <rect key="frame" x="40" y="410" width="313" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="email-txt-001">
+                                <rect key="frame" x="40" y="469" width="313" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="email-height"/>
+                                </constraints>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pass-txt-001">
+                                <rect key="frame" x="40" y="533" width="313" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="pass-height"/>
+                                </constraints>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="login-btn-001">
+                                <rect key="frame" x="40" y="597" width="313" height="44"/>
+                                <color key="backgroundColor" name="AppPrimaryBrown"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="login-btn-height"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="8bC-Xf-vdC" eventType="touchUpInside" id="login-action-001"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="create-btn-001">
+                                <rect key="frame" x="40" y="661" width="313" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="create-btn-height"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Create Account">
+                                    <color key="titleColor" name="AppPrimaryBrown"/>
+                                </state>
+                                <connections>
+                                    <action selector="createAccountTapped:" destination="8bC-Xf-vdC" eventType="touchUpInside" id="create-action-001"/>
+                                    <segue destination="signup-vc-001" kind="show" id="login-to-signup-segue"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="AppBackground"/>
+                        <constraints>
+                            <constraint firstItem="create-btn-001" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="create-leading"/>
+                            <constraint firstItem="create-btn-001" firstAttribute="top" secondItem="login-btn-001" secondAttribute="bottom" constant="20" id="create-top"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="create-btn-001" secondAttribute="trailing" constant="40" id="create-trailing"/>
+                            <constraint firstItem="email-txt-001" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="email-leading"/>
+                            <constraint firstItem="email-txt-001" firstAttribute="top" secondItem="subtitle-lbl-001" secondAttribute="bottom" constant="30" id="email-top"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="email-txt-001" secondAttribute="trailing" constant="40" id="email-trailing"/>
+                            <constraint firstItem="login-btn-001" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="login-leading"/>
+                            <constraint firstItem="login-btn-001" firstAttribute="top" secondItem="pass-txt-001" secondAttribute="bottom" constant="20" id="login-top"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="login-btn-001" secondAttribute="trailing" constant="40" id="login-trailing"/>
+                            <constraint firstItem="logo-img-001" firstAttribute="centerX" secondItem="8bC-Xf-abc" secondAttribute="centerX" id="logo-centerX"/>
+                            <constraint firstItem="logo-img-001" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="logo-top"/>
+                            <constraint firstItem="pass-txt-001" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="pass-leading"/>
+                            <constraint firstItem="pass-txt-001" firstAttribute="top" secondItem="email-txt-001" secondAttribute="bottom" constant="20" id="pass-top"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pass-txt-001" secondAttribute="trailing" constant="40" id="pass-trailing"/>
+                            <constraint firstItem="subtitle-lbl-001" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="subtitle-leading"/>
+                            <constraint firstItem="subtitle-lbl-001" firstAttribute="top" secondItem="title-lbl-001" secondAttribute="bottom" constant="20" id="subtitle-top"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="subtitle-lbl-001" secondAttribute="trailing" constant="40" id="subtitle-trailing"/>
+                            <constraint firstItem="title-lbl-001" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="title-leading"/>
+                            <constraint firstItem="title-lbl-001" firstAttribute="top" secondItem="logo-img-001" secondAttribute="bottom" constant="20" id="title-top"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="title-lbl-001" secondAttribute="trailing" constant="40" id="title-trailing"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nav-item-001"/>
+                    <connections>
+                        <outlet property="createAccountButton" destination="create-btn-001" id="outlet-create"/>
+                        <outlet property="emailTextField" destination="email-txt-001" id="outlet-email"/>
+                        <outlet property="loginButton" destination="login-btn-001" id="outlet-login"/>
+                        <outlet property="logoImageView" destination="logo-img-001" id="outlet-logo"/>
+                        <outlet property="passwordTextField" destination="pass-txt-001" id="outlet-pass"/>
+                        <outlet property="subtitleLabel" destination="subtitle-lbl-001" id="outlet-subtitle"/>
+                        <outlet property="titleLabel" destination="title-lbl-001" id="outlet-title"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-abc" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="-27"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="signup-scene-001">
+            <objects>
+                <viewController id="signup-vc-001" customClass="SignUpViewController" customModule="PuduPranav_ProjectFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="signup-view-001">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get It Done" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="signup-title-lbl">
+                                <rect key="frame" x="40" y="192" width="313" height="38"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="signup-subtitle-lbl">
+                                <rect key="frame" x="40" y="250" width="313" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="signup-firstname-txt">
+                                <rect key="frame" x="40" y="299" width="313" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="firstname-height"/>
+                                </constraints>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" textContentType="given-name"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="signup-lastname-txt">
+                                <rect key="frame" x="40" y="363" width="313" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="lastname-height"/>
+                                </constraints>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" textContentType="family-name"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="signup-email-txt">
+                                <rect key="frame" x="40" y="427" width="313" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="signup-email-height"/>
+                                </constraints>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="signup-phone-txt">
+                                <rect key="frame" x="40" y="491" width="313" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="phone-height"/>
+                                </constraints>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="signup-password-txt">
+                                <rect key="frame" x="40" y="555" width="313" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="signup-password-height"/>
+                                </constraints>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="new-password"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="signup-confirm-txt">
+                                <rect key="frame" x="40" y="619" width="313" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="confirm-height"/>
+                                </constraints>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="new-password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="signup-btn">
+                                <rect key="frame" x="40" y="683" width="313" height="44"/>
+                                <color key="backgroundColor" name="AppPrimaryBrown"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="signup-btn-height"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signUpTapped:" destination="signup-vc-001" eventType="touchUpInside" id="signup-action"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="signup-login-btn">
+                                <rect key="frame" x="40" y="747" width="313" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="signup-login-height"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Already have an account? Login">
+                                    <color key="titleColor" name="AppPrimaryBrown"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginTapped:" destination="signup-vc-001" eventType="touchUpInside" id="signup-login-action"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="signup-safe-area"/>
+                        <color key="backgroundColor" name="AppBackground"/>
+                        <constraints>
+                            <constraint firstItem="signup-confirm-txt" firstAttribute="leading" secondItem="signup-safe-area" secondAttribute="leading" constant="40" id="confirm-leading"/>
+                            <constraint firstItem="signup-confirm-txt" firstAttribute="top" secondItem="signup-password-txt" secondAttribute="bottom" constant="20" id="confirm-top"/>
+                            <constraint firstItem="signup-safe-area" firstAttribute="trailing" secondItem="signup-confirm-txt" secondAttribute="trailing" constant="40" id="confirm-trailing"/>
+                            <constraint firstItem="signup-firstname-txt" firstAttribute="leading" secondItem="signup-safe-area" secondAttribute="leading" constant="40" id="firstname-leading"/>
+                            <constraint firstItem="signup-firstname-txt" firstAttribute="top" secondItem="signup-subtitle-lbl" secondAttribute="bottom" constant="20" id="firstname-top"/>
+                            <constraint firstItem="signup-safe-area" firstAttribute="trailing" secondItem="signup-firstname-txt" secondAttribute="trailing" constant="40" id="firstname-trailing"/>
+                            <constraint firstItem="signup-lastname-txt" firstAttribute="leading" secondItem="signup-safe-area" secondAttribute="leading" constant="40" id="lastname-leading"/>
+                            <constraint firstItem="signup-lastname-txt" firstAttribute="top" secondItem="signup-firstname-txt" secondAttribute="bottom" constant="20" id="lastname-top"/>
+                            <constraint firstItem="signup-safe-area" firstAttribute="trailing" secondItem="signup-lastname-txt" secondAttribute="trailing" constant="40" id="lastname-trailing"/>
+                            <constraint firstItem="signup-phone-txt" firstAttribute="leading" secondItem="signup-safe-area" secondAttribute="leading" constant="40" id="phone-leading"/>
+                            <constraint firstItem="signup-phone-txt" firstAttribute="top" secondItem="signup-email-txt" secondAttribute="bottom" constant="20" id="phone-top"/>
+                            <constraint firstItem="signup-safe-area" firstAttribute="trailing" secondItem="signup-phone-txt" secondAttribute="trailing" constant="40" id="phone-trailing"/>
+                            <constraint firstItem="signup-btn" firstAttribute="leading" secondItem="signup-safe-area" secondAttribute="leading" constant="40" id="signup-btn-leading"/>
+                            <constraint firstItem="signup-btn" firstAttribute="top" secondItem="signup-confirm-txt" secondAttribute="bottom" constant="20" id="signup-btn-top"/>
+                            <constraint firstItem="signup-safe-area" firstAttribute="trailing" secondItem="signup-btn" secondAttribute="trailing" constant="40" id="signup-btn-trailing"/>
+                            <constraint firstItem="signup-email-txt" firstAttribute="leading" secondItem="signup-safe-area" secondAttribute="leading" constant="40" id="signup-email-leading"/>
+                            <constraint firstItem="signup-email-txt" firstAttribute="top" secondItem="signup-lastname-txt" secondAttribute="bottom" constant="20" id="signup-email-top"/>
+                            <constraint firstItem="signup-safe-area" firstAttribute="trailing" secondItem="signup-email-txt" secondAttribute="trailing" constant="40" id="signup-email-trailing"/>
+                            <constraint firstItem="signup-login-btn" firstAttribute="leading" secondItem="signup-safe-area" secondAttribute="leading" constant="40" id="signup-login-leading"/>
+                            <constraint firstItem="signup-login-btn" firstAttribute="top" secondItem="signup-btn" secondAttribute="bottom" constant="20" id="signup-login-top"/>
+                            <constraint firstItem="signup-safe-area" firstAttribute="trailing" secondItem="signup-login-btn" secondAttribute="trailing" constant="40" id="signup-login-trailing"/>
+                            <constraint firstItem="signup-password-txt" firstAttribute="leading" secondItem="signup-safe-area" secondAttribute="leading" constant="40" id="signup-password-leading"/>
+                            <constraint firstItem="signup-password-txt" firstAttribute="top" secondItem="signup-phone-txt" secondAttribute="bottom" constant="20" id="signup-password-top"/>
+                            <constraint firstItem="signup-safe-area" firstAttribute="trailing" secondItem="signup-password-txt" secondAttribute="trailing" constant="40" id="signup-password-trailing"/>
+                            <constraint firstItem="signup-subtitle-lbl" firstAttribute="leading" secondItem="signup-safe-area" secondAttribute="leading" constant="40" id="signup-subtitle-leading"/>
+                            <constraint firstItem="signup-subtitle-lbl" firstAttribute="top" secondItem="signup-title-lbl" secondAttribute="bottom" constant="20" id="signup-subtitle-top"/>
+                            <constraint firstItem="signup-safe-area" firstAttribute="trailing" secondItem="signup-subtitle-lbl" secondAttribute="trailing" constant="40" id="signup-subtitle-trailing"/>
+                            <constraint firstItem="signup-title-lbl" firstAttribute="leading" secondItem="signup-safe-area" secondAttribute="leading" constant="40" id="signup-title-leading"/>
+                            <constraint firstItem="signup-title-lbl" firstAttribute="top" secondItem="signup-safe-area" secondAttribute="top" constant="20" id="signup-title-top"/>
+                            <constraint firstItem="signup-safe-area" firstAttribute="trailing" secondItem="signup-title-lbl" secondAttribute="trailing" constant="40" id="signup-title-trailing"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="signup-nav-item"/>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="signup-confirm-txt" id="outlet-confirm"/>
+                        <outlet property="emailTextField" destination="signup-email-txt" id="outlet-signup-email"/>
+                        <outlet property="firstNameTextField" destination="signup-firstname-txt" id="outlet-firstname"/>
+                        <outlet property="lastNameTextField" destination="signup-lastname-txt" id="outlet-lastname"/>
+                        <outlet property="loginButton" destination="signup-login-btn" id="outlet-signup-login"/>
+                        <outlet property="passwordTextField" destination="signup-password-txt" id="outlet-signup-password"/>
+                        <outlet property="phoneTextField" destination="signup-phone-txt" id="outlet-phone"/>
+                        <outlet property="signUpButton" destination="signup-btn" id="outlet-signup-btn"/>
+                        <outlet property="subtitleLabel" destination="signup-subtitle-lbl" id="outlet-signup-subtitle"/>
+                        <outlet property="titleLabel" destination="signup-title-lbl" id="outlet-signup-title"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="signup-responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1908" y="-27"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="tabbar-scene">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabBarController" id="tabbar-controller" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tabbar-001">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="AppBackground"/>
+                        <color key="tintColor" name="AppPrimaryBrown"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="feed-nav" kind="relationship" relationship="viewControllers" id="tabbar-feed-segue"/>
+                        <segue destination="friends-nav" kind="relationship" relationship="viewControllers" id="tabbar-friends-segue"/>
+                        <segue destination="challenges-nav" kind="relationship" relationship="viewControllers" id="tabbar-challenges-segue"/>
+                        <segue destination="tokens-nav" kind="relationship" relationship="viewControllers" id="tabbar-tokens-segue"/>
+                        <segue destination="settings-nav" kind="relationship" relationship="viewControllers" id="tabbar-settings-segue"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tabbar-responder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="800"/>
+        </scene>
+        <!--Feed-->
+        <scene sceneID="feed-nav-scene">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="feed-nav" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Feed" image="house" catalog="system" id="feed-tabbar-item"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="feed-navbar">
+                        <rect key="frame" x="0.0" y="118" width="393" height="54"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="feed-vc" kind="relationship" relationship="rootViewController" id="feed-root-segue"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="feed-nav-responder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="600"/>
+        </scene>
+        <!--Feed-->
+        <scene sceneID="feed-vc-scene">
+            <objects>
+                <viewController id="feed-vc" customClass="FeedViewController" customModule="PuduPranav_ProjectFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="feed-view">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="feed-header-view">
+                                <rect key="frame" x="0.0" y="172" width="393" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Feed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feed-header-label">
+                                        <rect key="frame" x="20" y="20" width="81.333333333333329" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" name="AppPrimaryBrown"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feed-create-challenge-btn">
+                                        <rect key="frame" x="238" y="11.666666666666657" width="135" height="35"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="feed-create-height"/>
+                                            <constraint firstAttribute="width" constant="135" id="feed-create-width"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <state key="normal" title="Create Challenge">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="17"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="AppBackground"/>
+                                <constraints>
+                                    <constraint firstItem="feed-create-challenge-btn" firstAttribute="centerY" secondItem="feed-header-view" secondAttribute="centerY" constant="-1" id="feed-create-centerY"/>
+                                    <constraint firstAttribute="trailing" secondItem="feed-create-challenge-btn" secondAttribute="trailing" constant="20" id="feed-create-trailing"/>
+                                    <constraint firstAttribute="height" constant="60" id="feed-header-height"/>
+                                    <constraint firstItem="feed-header-label" firstAttribute="centerY" secondItem="feed-header-view" secondAttribute="centerY" id="feed-header-label-centerY"/>
+                                    <constraint firstItem="feed-header-label" firstAttribute="leading" secondItem="feed-header-view" secondAttribute="leading" constant="20" id="feed-header-label-leading"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="feed-tableview">
+                                <rect key="frame" x="0.0" y="232" width="393" height="620"/>
+                                <color key="backgroundColor" name="AppBackground"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="feed-safe-area"/>
+                        <color key="backgroundColor" name="AppBackground"/>
+                        <constraints>
+                            <constraint firstItem="feed-header-view" firstAttribute="leading" secondItem="feed-safe-area" secondAttribute="leading" id="feed-header-leading"/>
+                            <constraint firstItem="feed-header-view" firstAttribute="top" secondItem="feed-safe-area" secondAttribute="top" id="feed-header-top"/>
+                            <constraint firstItem="feed-safe-area" firstAttribute="trailing" secondItem="feed-header-view" secondAttribute="trailing" id="feed-header-trailing"/>
+                            <constraint firstAttribute="bottom" secondItem="feed-tableview" secondAttribute="bottom" id="feed-tv-bottom"/>
+                            <constraint firstItem="feed-tableview" firstAttribute="leading" secondItem="feed-safe-area" secondAttribute="leading" id="feed-tv-leading"/>
+                            <constraint firstItem="feed-tableview" firstAttribute="top" secondItem="feed-header-view" secondAttribute="bottom" id="feed-tv-top"/>
+                            <constraint firstItem="feed-safe-area" firstAttribute="trailing" secondItem="feed-tableview" secondAttribute="trailing" id="feed-tv-trailing"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Feed" id="feed-nav-item"/>
+                    <connections>
+                        <outlet property="createChallengeButton" destination="feed-create-challenge-btn" id="outlet-feed-create"/>
+                        <outlet property="tableView" destination="feed-tableview" id="outlet-feed-tableview"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="feed-responder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1907.6335877862596" y="600"/>
+        </scene>
+        <!--Friends-->
+        <scene sceneID="friends-nav-scene">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="friends-nav" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Friends" image="person.2" catalog="system" id="friends-tabbar-item"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="friends-navbar">
+                        <rect key="frame" x="0.0" y="118" width="393" height="54"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="friends-vc" kind="relationship" relationship="rootViewController" id="friends-root-segue"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="friends-nav-responder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="1200"/>
+        </scene>
+        <!--Friends-->
+        <scene sceneID="friends-vc-scene">
+            <objects>
+                <viewController id="friends-vc" customClass="FriendsViewController" customModule="PuduPranav_ProjectFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="friends-view">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="friends-searchbar">
+                                <rect key="frame" x="0.0" y="172" width="393" height="64"/>
+                                <color key="backgroundColor" name="AppBackground"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="friends-header-view">
+                                <rect key="frame" x="0.0" y="236" width="393" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.2.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="friends-icon">
+                                        <rect key="frame" x="20" y="13.333333333333323" width="25" height="23.666666666666671"/>
+                                        <color key="tintColor" name="AppPrimaryBrown"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="friends-icon-height"/>
+                                            <constraint firstAttribute="width" constant="25" id="friends-icon-width"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="friends-header-label">
+                                        <rect key="frame" x="55" y="14.999999999999998" width="61" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" name="AppPrimaryBrown"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="AppBackground"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="friends-header-height"/>
+                                    <constraint firstItem="friends-header-label" firstAttribute="centerY" secondItem="friends-header-view" secondAttribute="centerY" id="friends-header-label-centerY"/>
+                                    <constraint firstItem="friends-header-label" firstAttribute="leading" secondItem="friends-icon" secondAttribute="trailing" constant="10" id="friends-header-label-leading"/>
+                                    <constraint firstItem="friends-icon" firstAttribute="centerY" secondItem="friends-header-view" secondAttribute="centerY" id="friends-icon-centerY"/>
+                                    <constraint firstItem="friends-icon" firstAttribute="leading" secondItem="friends-header-view" secondAttribute="leading" constant="20" id="friends-icon-leading"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="friends-tableview">
+                                <rect key="frame" x="0.0" y="286" width="393" height="566"/>
+                                <color key="backgroundColor" name="AppBackground"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="friends-safe-area"/>
+                        <color key="backgroundColor" name="AppBackground"/>
+                        <constraints>
+                            <constraint firstItem="friends-header-view" firstAttribute="leading" secondItem="friends-safe-area" secondAttribute="leading" id="friends-header-leading"/>
+                            <constraint firstItem="friends-header-view" firstAttribute="top" secondItem="friends-searchbar" secondAttribute="bottom" id="friends-header-top"/>
+                            <constraint firstItem="friends-safe-area" firstAttribute="trailing" secondItem="friends-header-view" secondAttribute="trailing" id="friends-header-trailing"/>
+                            <constraint firstItem="friends-searchbar" firstAttribute="leading" secondItem="friends-safe-area" secondAttribute="leading" id="friends-search-leading"/>
+                            <constraint firstItem="friends-searchbar" firstAttribute="top" secondItem="friends-safe-area" secondAttribute="top" id="friends-search-top"/>
+                            <constraint firstItem="friends-safe-area" firstAttribute="trailing" secondItem="friends-searchbar" secondAttribute="trailing" id="friends-search-trailing"/>
+                            <constraint firstAttribute="bottom" secondItem="friends-tableview" secondAttribute="bottom" id="friends-tv-bottom"/>
+                            <constraint firstItem="friends-tableview" firstAttribute="leading" secondItem="friends-safe-area" secondAttribute="leading" id="friends-tv-leading"/>
+                            <constraint firstItem="friends-tableview" firstAttribute="top" secondItem="friends-header-view" secondAttribute="bottom" id="friends-tv-top"/>
+                            <constraint firstItem="friends-safe-area" firstAttribute="trailing" secondItem="friends-tableview" secondAttribute="trailing" id="friends-tv-trailing"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Friends" id="friends-nav-item"/>
+                    <connections>
+                        <outlet property="searchBar" destination="friends-searchbar" id="5dJ-rK-72s"/>
+                        <outlet property="tableView" destination="friends-tableview" id="dwV-MB-ad3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="friends-responder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2596" y="1155"/>
+        </scene>
+        <!--Challenges-->
+        <scene sceneID="challenges-nav-scene">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="challenges-nav" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Challenges" image="flame" catalog="system" id="challenges-tabbar-item"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="challenges-navbar">
+                        <rect key="frame" x="0.0" y="118" width="393" height="54"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="challenges-vc" kind="relationship" relationship="rootViewController" id="challenges-root-segue"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="challenges-nav-responder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="1800"/>
+        </scene>
+        <!--Challenges-->
+        <scene sceneID="challenges-vc-scene">
+            <objects>
+                <viewController id="challenges-vc" customClass="ChallengesViewController" customModule="PuduPranav_ProjectFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="challenges-view">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="challenges-tableview">
+                                <rect key="frame" x="0.0" y="172" width="393" height="680"/>
+                                <color key="backgroundColor" name="AppBackground"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="challenges-safe-area"/>
+                        <color key="backgroundColor" name="AppBackground"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="challenges-tableview" secondAttribute="bottom" id="challenges-tv-bottom"/>
+                            <constraint firstItem="challenges-tableview" firstAttribute="leading" secondItem="challenges-safe-area" secondAttribute="leading" id="challenges-tv-leading"/>
+                            <constraint firstItem="challenges-tableview" firstAttribute="top" secondItem="challenges-safe-area" secondAttribute="top" id="challenges-tv-top"/>
+                            <constraint firstItem="challenges-safe-area" firstAttribute="trailing" secondItem="challenges-tableview" secondAttribute="trailing" id="challenges-tv-trailing"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Challenges" id="challenges-nav-item"/>
+                    <connections>
+                        <outlet property="tableView" destination="challenges-tableview" id="outlet-challenges-tableview"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="challenges-responder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1908" y="1800"/>
+        </scene>
+        <!--Tokens-->
+        <scene sceneID="tokens-nav-scene">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tokens-nav" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tokens" image="creditcard" catalog="system" id="tokens-tabbar-item"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tokens-navbar">
+                        <rect key="frame" x="0.0" y="118" width="393" height="54"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tokens-vc" kind="relationship" relationship="rootViewController" id="tokens-root-segue"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tokens-nav-responder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="2400"/>
+        </scene>
+        <!--Tokens-->
+        <scene sceneID="tokens-vc-scene">
+            <objects>
+                <viewController id="tokens-vc" customClass="TokensViewController" customModule="PuduPranav_ProjectFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tokens-view">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dumbbell" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tokens-icon">
+                                <rect key="frame" x="146.66666666666666" y="215" width="100" height="94"/>
+                                <color key="tintColor" name="AppPrimaryBrown"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="tokens-icon-height"/>
+                                    <constraint firstAttribute="width" constant="100" id="tokens-icon-width"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,250" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tokens-balance-label">
+                                <rect key="frame" x="20" y="332" width="353" height="38.333333333333314"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tokens-add-btn">
+                                <rect key="frame" x="109" y="390.33333333333331" width="175" height="44"/>
+                                <color key="backgroundColor" name="AppPrimaryBrown"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="tokens-add-height"/>
+                                    <constraint firstAttribute="width" constant="175" id="tokens-add-width"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Add Tokens">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addTokensButton:" destination="tokens-vc" eventType="touchUpInside" id="sWr-Tt-gx2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaction History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tokens-history-label">
+                                <rect key="frame" x="20" y="464.33333333333331" width="353" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tokens-tableview">
+                                <rect key="frame" x="0.0" y="504.66666666666674" width="393" height="347.33333333333326"/>
+                                <color key="backgroundColor" name="AppBackground"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tokens-safe-area"/>
+                        <color key="backgroundColor" name="AppBackground"/>
+                        <constraints>
+                            <constraint firstItem="tokens-add-btn" firstAttribute="centerX" secondItem="tokens-view" secondAttribute="centerX" id="tokens-add-centerX"/>
+                            <constraint firstItem="tokens-add-btn" firstAttribute="top" secondItem="tokens-balance-label" secondAttribute="bottom" constant="20" id="tokens-add-top"/>
+                            <constraint firstItem="tokens-balance-label" firstAttribute="leading" secondItem="tokens-safe-area" secondAttribute="leading" constant="20" id="tokens-balance-leading"/>
+                            <constraint firstItem="tokens-balance-label" firstAttribute="top" secondItem="tokens-icon" secondAttribute="bottom" constant="20" id="tokens-balance-top"/>
+                            <constraint firstItem="tokens-safe-area" firstAttribute="trailing" secondItem="tokens-balance-label" secondAttribute="trailing" constant="20" id="tokens-balance-trailing"/>
+                            <constraint firstItem="tokens-history-label" firstAttribute="leading" secondItem="tokens-safe-area" secondAttribute="leading" constant="20" id="tokens-history-leading"/>
+                            <constraint firstItem="tokens-history-label" firstAttribute="top" secondItem="tokens-add-btn" secondAttribute="bottom" constant="30" id="tokens-history-top"/>
+                            <constraint firstItem="tokens-safe-area" firstAttribute="trailing" secondItem="tokens-history-label" secondAttribute="trailing" constant="20" id="tokens-history-trailing"/>
+                            <constraint firstItem="tokens-icon" firstAttribute="centerX" secondItem="tokens-view" secondAttribute="centerX" id="tokens-icon-centerX"/>
+                            <constraint firstItem="tokens-icon" firstAttribute="top" secondItem="tokens-safe-area" secondAttribute="top" constant="40" id="tokens-icon-top"/>
+                            <constraint firstAttribute="bottom" secondItem="tokens-tableview" secondAttribute="bottom" id="tokens-tv-bottom"/>
+                            <constraint firstItem="tokens-tableview" firstAttribute="leading" secondItem="tokens-safe-area" secondAttribute="leading" id="tokens-tv-leading"/>
+                            <constraint firstItem="tokens-tableview" firstAttribute="top" secondItem="tokens-history-label" secondAttribute="bottom" constant="20" id="tokens-tv-top"/>
+                            <constraint firstItem="tokens-safe-area" firstAttribute="trailing" secondItem="tokens-tableview" secondAttribute="trailing" id="tokens-tv-trailing"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tokens" id="tokens-nav-item"/>
+                    <connections>
+                        <outlet property="addTokensButton" destination="tokens-add-btn" id="t6C-lp-2ee"/>
+                        <outlet property="tableView" destination="tokens-tableview" id="BrM-q1-YMb"/>
+                        <outlet property="tokensBalanceLabel" destination="tokens-balance-label" id="x0L-rs-gXd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tokens-responder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1908" y="2423"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="settings-nav-scene">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="settings-nav" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="settings-tabbar-item"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="settings-navbar">
+                        <rect key="frame" x="0.0" y="118" width="393" height="54"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="settings-vc" kind="relationship" relationship="rootViewController" id="settings-root-segue"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="settings-nav-responder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="3000"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="settings-vc-scene">
+            <objects>
+                <viewController id="settings-vc" customClass="SettingsViewController" customModule="PuduPranav_ProjectFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="settings-view">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="settings-profile-image">
+                                <rect key="frame" x="156.66666666666666" y="192" width="80" height="80"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="settings-img-height"/>
+                                    <constraint firstAttribute="width" constant="80" id="settings-img-width"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pranav Pudu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="settings-name-label">
+                                <rect key="frame" x="20" y="282" width="353" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@pranavpudu1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="settings-username-label">
+                                <rect key="frame" x="20" y="307.33333333333331" width="353" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="settings-edit-profile-btn">
+                                <rect key="frame" x="146.66666666666666" y="334.33333333333331" width="100" height="32"/>
+                                <color key="backgroundColor" name="AppPrimaryBrown"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="settings-edit-height"/>
+                                    <constraint firstAttribute="width" constant="100" id="settings-edit-width"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Edit profile">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="settings-stats-stack">
+                                <rect key="frame" x="96.666666666666686" y="386.33333333333331" width="200" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="settings-followers-stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="settings-followers-count">
+                                                <rect key="frame" x="27" y="0.0" width="26" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" name="AppPrimaryBrown"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Followers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="settings-followers-label">
+                                                <rect key="frame" x="12.999999999999996" y="29" width="53.666666666666657" height="11"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" systemColor="systemGrayColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="settings-following-stack">
+                                        <rect key="frame" x="120" y="0.0" width="80" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="settings-following-count">
+                                                <rect key="frame" x="29" y="0.0" width="22" height="20.666666666666668"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" name="AppPrimaryBrown"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Following" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="settings-following-label">
+                                                <rect key="frame" x="12.999999999999996" y="25.666666666666682" width="53.666666666666657" height="14.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" systemColor="systemGrayColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="settings-stats-height"/>
+                                    <constraint firstAttribute="width" constant="200" id="settings-stats-width"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="settings-darkmode-container">
+                                <rect key="frame" x="20" y="456.33333333333331" width="353" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moon.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="settings-darkmode-icon">
+                                        <rect key="frame" x="12" y="15.666666666666664" width="20" height="18.666666666666679"/>
+                                        <color key="tintColor" name="AppPrimaryBrown"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="settings-darkmode-icon-height"/>
+                                            <constraint firstAttribute="width" constant="20" id="settings-darkmode-icon-width"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="settings-darkmode-label">
+                                        <rect key="frame" x="43.999999999999993" y="15.333333333333369" width="79.333333333333314" height="19.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" name="AppPrimaryBrown"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="settings-darkmode-switch">
+                                        <rect key="frame" x="292" y="11" width="63" height="28"/>
+                                        <color key="onTintColor" systemColor="systemGreenColor"/>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" name="AppBackground"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="settings-darkmode-container-height"/>
+                                    <constraint firstItem="settings-darkmode-icon" firstAttribute="centerY" secondItem="settings-darkmode-container" secondAttribute="centerY" id="settings-darkmode-icon-centerY"/>
+                                    <constraint firstItem="settings-darkmode-icon" firstAttribute="leading" secondItem="settings-darkmode-container" secondAttribute="leading" constant="12" id="settings-darkmode-icon-leading"/>
+                                    <constraint firstItem="settings-darkmode-label" firstAttribute="centerY" secondItem="settings-darkmode-container" secondAttribute="centerY" id="settings-darkmode-label-centerY"/>
+                                    <constraint firstItem="settings-darkmode-label" firstAttribute="leading" secondItem="settings-darkmode-icon" secondAttribute="trailing" constant="12" id="settings-darkmode-label-leading"/>
+                                    <constraint firstItem="settings-darkmode-switch" firstAttribute="centerY" secondItem="settings-darkmode-container" secondAttribute="centerY" id="settings-darkmode-switch-centerY"/>
+                                    <constraint firstAttribute="trailing" secondItem="settings-darkmode-switch" secondAttribute="trailing" id="settings-darkmode-switch-trailing"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="settings-notifications-container">
+                                <rect key="frame" x="20" y="526.33333333333337" width="353" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bell.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="settings-notifications-icon">
+                                        <rect key="frame" x="12" y="15.333333333333332" width="20" height="19.333333333333339"/>
+                                        <color key="tintColor" name="AppPrimaryBrown"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="settings-notifications-icon-height"/>
+                                            <constraint firstAttribute="width" constant="20" id="settings-notifications-icon-width"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check-in Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="settings-notifications-label">
+                                        <rect key="frame" x="44" y="15.333333333333256" width="161" height="19.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" name="AppPrimaryBrown"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="settings-notifications-switch">
+                                        <rect key="frame" x="292" y="11" width="63" height="28"/>
+                                        <color key="onTintColor" systemColor="systemGreenColor"/>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" name="AppBackground"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="settings-notifications-container-height"/>
+                                    <constraint firstItem="settings-notifications-icon" firstAttribute="centerY" secondItem="settings-notifications-container" secondAttribute="centerY" id="settings-notifications-icon-centerY"/>
+                                    <constraint firstItem="settings-notifications-icon" firstAttribute="leading" secondItem="settings-notifications-container" secondAttribute="leading" constant="12" id="settings-notifications-icon-leading"/>
+                                    <constraint firstItem="settings-notifications-label" firstAttribute="centerY" secondItem="settings-notifications-container" secondAttribute="centerY" id="settings-notifications-label-centerY"/>
+                                    <constraint firstItem="settings-notifications-label" firstAttribute="leading" secondItem="settings-notifications-icon" secondAttribute="trailing" constant="12" id="settings-notifications-label-leading"/>
+                                    <constraint firstItem="settings-notifications-switch" firstAttribute="centerY" secondItem="settings-notifications-container" secondAttribute="centerY" id="settings-notifications-switch-centerY"/>
+                                    <constraint firstAttribute="trailing" secondItem="settings-notifications-switch" secondAttribute="trailing" id="settings-notifications-switch-trailing"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="settings-safe-area"/>
+                        <color key="backgroundColor" name="AppBackground"/>
+                        <constraints>
+                            <constraint firstItem="settings-darkmode-container" firstAttribute="leading" secondItem="settings-safe-area" secondAttribute="leading" constant="20" id="settings-darkmode-leading"/>
+                            <constraint firstItem="settings-darkmode-container" firstAttribute="top" secondItem="settings-stats-stack" secondAttribute="bottom" constant="30" id="settings-darkmode-top"/>
+                            <constraint firstItem="settings-safe-area" firstAttribute="trailing" secondItem="settings-darkmode-container" secondAttribute="trailing" constant="20" id="settings-darkmode-trailing"/>
+                            <constraint firstItem="settings-edit-profile-btn" firstAttribute="centerX" secondItem="settings-view" secondAttribute="centerX" id="settings-edit-centerX"/>
+                            <constraint firstItem="settings-edit-profile-btn" firstAttribute="top" secondItem="settings-username-label" secondAttribute="bottom" constant="10" id="settings-edit-top"/>
+                            <constraint firstItem="settings-name-label" firstAttribute="leading" secondItem="settings-safe-area" secondAttribute="leading" constant="20" id="settings-name-leading"/>
+                            <constraint firstItem="settings-name-label" firstAttribute="top" secondItem="settings-profile-image" secondAttribute="bottom" constant="10" id="settings-name-top"/>
+                            <constraint firstItem="settings-safe-area" firstAttribute="trailing" secondItem="settings-name-label" secondAttribute="trailing" constant="20" id="settings-name-trailing"/>
+                            <constraint firstItem="settings-notifications-container" firstAttribute="leading" secondItem="settings-safe-area" secondAttribute="leading" constant="20" id="settings-notifications-leading"/>
+                            <constraint firstItem="settings-notifications-container" firstAttribute="top" secondItem="settings-darkmode-container" secondAttribute="bottom" constant="20" id="settings-notifications-top"/>
+                            <constraint firstItem="settings-safe-area" firstAttribute="trailing" secondItem="settings-notifications-container" secondAttribute="trailing" constant="20" id="settings-notifications-trailing"/>
+                            <constraint firstItem="settings-profile-image" firstAttribute="centerX" secondItem="settings-view" secondAttribute="centerX" id="settings-profile-centerX"/>
+                            <constraint firstItem="settings-profile-image" firstAttribute="top" secondItem="settings-safe-area" secondAttribute="top" constant="20" id="settings-profile-top"/>
+                            <constraint firstItem="settings-stats-stack" firstAttribute="centerX" secondItem="settings-view" secondAttribute="centerX" id="settings-stats-centerX"/>
+                            <constraint firstItem="settings-stats-stack" firstAttribute="top" secondItem="settings-edit-profile-btn" secondAttribute="bottom" constant="20" id="settings-stats-top"/>
+                            <constraint firstItem="settings-username-label" firstAttribute="leading" secondItem="settings-safe-area" secondAttribute="leading" constant="20" id="settings-username-leading"/>
+                            <constraint firstItem="settings-username-label" firstAttribute="top" secondItem="settings-name-label" secondAttribute="bottom" constant="5" id="settings-username-top"/>
+                            <constraint firstItem="settings-safe-area" firstAttribute="trailing" secondItem="settings-username-label" secondAttribute="trailing" constant="20" id="settings-username-trailing"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="settings-nav-item"/>
+                    <connections>
+                        <outlet property="darkModeSwitch" destination="settings-darkmode-switch" id="outlet-settings-darkmode"/>
+                        <outlet property="editProfileButton" destination="settings-edit-profile-btn" id="outlet-settings-edit"/>
+                        <outlet property="followersCountLabel" destination="settings-followers-count" id="outlet-settings-followers-count"/>
+                        <outlet property="followingCountLabel" destination="settings-following-count" id="outlet-settings-following-count"/>
+                        <outlet property="nameLabel" destination="settings-name-label" id="outlet-settings-name"/>
+                        <outlet property="notificationsSwitch" destination="settings-notifications-switch" id="outlet-settings-notifications"/>
+                        <outlet property="profileImageView" destination="settings-profile-image" id="outlet-settings-profile-img"/>
+                        <outlet property="usernameLabel" destination="settings-username-label" id="outlet-settings-username"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="settings-responder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1908" y="3053"/>
+        </scene>
+        <!--Create Challenge-->
+        <scene sceneID="create-challenge-scene">
+            <objects>
+                <viewController id="create-challenge-vc" storyboardIdentifier="create-challenge-vc" customClass="CreateChallengeViewController" customModule="PuduPranav_ProjectFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="create-challenge-view">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="create-scrollview">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="create-content-view">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="900"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Challenge Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="name-label">
+                                                <rect key="frame" x="20" y="119.99999999999999" width="353" height="19.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <color key="textColor" name="AppPrimaryBrown"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter challenge name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="name-textfield">
+                                                <rect key="frame" x="20" y="147.33333333333334" width="353" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="name-height"/>
+                                                </constraints>
+                                                <color key="textColor" name="AppPrimaryBrown"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration (Days)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duration-label">
+                                                <rect key="frame" x="20" y="207.33333333333334" width="353" height="19.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <color key="textColor" name="AppPrimaryBrown"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="duration-stack">
+                                                <rect key="frame" x="20" y="234.66666666666663" width="156.33333333333334" height="44"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duration-value-label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="52.333333333333336" height="44"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <color key="textColor" name="AppPrimaryBrown"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="7" minimumValue="1" maximumValue="365" translatesAutoresizingMaskIntoConstraints="NO" id="duration-stepper">
+                                                        <rect key="frame" x="62.333333333333329" y="0.0" width="93.999999999999986" height="44"/>
+                                                        <color key="tintColor" name="AppPrimaryBrown"/>
+                                                        <connections>
+                                                            <action selector="durationChanged:" destination="create-challenge-vc" eventType="valueChanged" id="duration-action"/>
+                                                        </connections>
+                                                    </stepper>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="duration-stack-height"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Challenge Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="type-label">
+                                                <rect key="frame" x="20" y="294.66666666666669" width="353" height="19.333333333333314"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <color key="textColor" name="AppPrimaryBrown"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="type-segment">
+                                                <rect key="frame" x="20" y="322" width="353" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="31" id="type-height"/>
+                                                </constraints>
+                                                <segments>
+                                                    <segment title="Cardio"/>
+                                                    <segment title="Strength"/>
+                                                    <segment title="Legs"/>
+                                                    <segment title="Abs"/>
+                                                </segments>
+                                                <color key="selectedSegmentTintColor" name="AppPrimaryBrown"/>
+                                            </segmentedControl>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="desc-label">
+                                                <rect key="frame" x="20" y="369" width="353" height="19.333333333333314"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <color key="textColor" name="AppPrimaryBrown"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="desc-textview">
+                                                <rect key="frame" x="20" y="396.33333333333331" width="353" height="100"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="desc-height"/>
+                                                </constraints>
+                                                <color key="textColor" name="AppPrimaryBrown"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Friends (comma separated emails)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="friends-label">
+                                                <rect key="frame" x="20" y="512.33333333333337" width="353" height="19.333333333333371"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <color key="textColor" name="AppPrimaryBrown"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="friend1@email.com, friend2@email.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="friends-textfield">
+                                                <rect key="frame" x="20" y="539.66666666666663" width="353" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="friends-height"/>
+                                                </constraints>
+                                                <color key="textColor" name="AppPrimaryBrown"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stake Amount (Tokens)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stake-label">
+                                                <rect key="frame" x="20" y="599.66666666666663" width="353" height="19.333333333333371"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <color key="textColor" name="AppPrimaryBrown"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter stake amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="stake-textfield">
+                                                <rect key="frame" x="20" y="627" width="353" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="stake-height"/>
+                                                </constraints>
+                                                <color key="textColor" name="AppPrimaryBrown"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location (optional)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="location-label">
+                                                <rect key="frame" x="20" y="687" width="353" height="19.333333333333371"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <color key="textColor" name="AppPrimaryBrown"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Location (Optional)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="location-value-label">
+                                                <rect key="frame" x="20" y="714.33333333333337" width="353" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" systemColor="systemGrayColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="choose-location-button">
+                                                <rect key="frame" x="20" y="743.33333333333337" width="353" height="35"/>
+                                                <color key="backgroundColor" name="AppPrimaryBrown"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="choose-location-height"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <state key="normal" title="Choose Location">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="create-challenge-button">
+                                                <rect key="frame" x="20" y="778.33333333333337" width="353" height="50"/>
+                                                <color key="backgroundColor" name="AppPrimaryBrown"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="create-challenge-btn-height"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <state key="normal" title="Create Challenge">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="createButtonTapped:" destination="create-challenge-vc" eventType="touchUpInside" id="create-challenge-btn-action"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="dumbbell.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="create-icon">
+                                                <rect key="frame" x="156" y="62" width="80" height="74"/>
+                                                <color key="tintColor" name="AppPrimaryBrown"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="create-icon-height"/>
+                                                    <constraint firstAttribute="width" constant="80" id="create-icon-width"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="AppBackground"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="900" id="content-height"/>
+                                            <constraint firstItem="create-challenge-button" firstAttribute="leading" secondItem="create-content-view" secondAttribute="leading" constant="20" id="create-challenge-btn-leading"/>
+                                            <constraint firstItem="create-challenge-button" firstAttribute="top" secondItem="choose-location-button" secondAttribute="bottom" constant="20" id="create-challenge-btn-top"/>
+                                            <constraint firstAttribute="trailing" secondItem="create-challenge-button" secondAttribute="trailing" constant="20" id="create-challenge-btn-trailing"/>
+                                            <constraint firstItem="create-icon" firstAttribute="centerX" secondItem="create-content-view" secondAttribute="centerX" id="create-icon-centerX"/>
+                                            <constraint firstItem="create-icon" firstAttribute="top" secondItem="create-content-view" secondAttribute="top" constant="20" id="create-icon-top"/>
+                                            <constraint firstItem="desc-label" firstAttribute="leading" secondItem="create-content-view" secondAttribute="leading" constant="20" id="desc-lbl-leading"/>
+                                            <constraint firstItem="desc-label" firstAttribute="top" secondItem="type-segment" secondAttribute="bottom" constant="16" id="desc-lbl-top"/>
+                                            <constraint firstAttribute="trailing" secondItem="desc-label" secondAttribute="trailing" constant="20" id="desc-lbl-trailing"/>
+                                            <constraint firstItem="desc-textview" firstAttribute="leading" secondItem="create-content-view" secondAttribute="leading" constant="20" id="desc-tv-leading"/>
+                                            <constraint firstItem="desc-textview" firstAttribute="top" secondItem="desc-label" secondAttribute="bottom" constant="8" id="desc-tv-top"/>
+                                            <constraint firstAttribute="trailing" secondItem="desc-textview" secondAttribute="trailing" constant="20" id="desc-tv-trailing"/>
+                                            <constraint firstItem="duration-label" firstAttribute="leading" secondItem="create-content-view" secondAttribute="leading" constant="20" id="dur-lbl-leading"/>
+                                            <constraint firstItem="duration-label" firstAttribute="top" secondItem="name-textfield" secondAttribute="bottom" constant="16" id="dur-lbl-top"/>
+                                            <constraint firstAttribute="trailing" secondItem="duration-label" secondAttribute="trailing" constant="20" id="dur-lbl-trailing"/>
+                                            <constraint firstItem="duration-stack" firstAttribute="leading" secondItem="create-content-view" secondAttribute="leading" constant="20" id="dur-stack-leading"/>
+                                            <constraint firstItem="duration-stack" firstAttribute="top" secondItem="duration-label" secondAttribute="bottom" constant="8" id="dur-stack-top"/>
+                                            <constraint firstItem="friends-label" firstAttribute="leading" secondItem="create-content-view" secondAttribute="leading" constant="20" id="friends-lbl-leading"/>
+                                            <constraint firstItem="friends-label" firstAttribute="top" secondItem="desc-textview" secondAttribute="bottom" constant="16" id="friends-lbl-top"/>
+                                            <constraint firstAttribute="trailing" secondItem="friends-label" secondAttribute="trailing" constant="20" id="friends-lbl-trailing"/>
+                                            <constraint firstItem="friends-textfield" firstAttribute="leading" secondItem="create-content-view" secondAttribute="leading" constant="20" id="friends-txt-leading"/>
+                                            <constraint firstItem="friends-textfield" firstAttribute="top" secondItem="friends-label" secondAttribute="bottom" constant="8" id="friends-txt-top"/>
+                                            <constraint firstAttribute="trailing" secondItem="friends-textfield" secondAttribute="trailing" constant="20" id="friends-txt-trailing"/>
+                                            <constraint firstItem="location-label" firstAttribute="leading" secondItem="create-content-view" secondAttribute="leading" constant="20" id="location-lbl-leading"/>
+                                            <constraint firstItem="location-label" firstAttribute="top" secondItem="stake-textfield" secondAttribute="bottom" constant="16" id="location-lbl-top"/>
+                                            <constraint firstAttribute="trailing" secondItem="location-label" secondAttribute="trailing" constant="20" id="location-lbl-trailing"/>
+                                            <constraint firstItem="location-value-label" firstAttribute="leading" secondItem="create-content-view" secondAttribute="leading" constant="20" id="location-value-leading"/>
+                                            <constraint firstItem="location-value-label" firstAttribute="top" secondItem="location-label" secondAttribute="bottom" constant="8" id="location-value-top"/>
+                                            <constraint firstAttribute="trailing" secondItem="location-value-label" secondAttribute="trailing" constant="20" id="location-value-trailing"/>
+                                            <constraint firstItem="choose-location-button" firstAttribute="leading" secondItem="create-content-view" secondAttribute="leading" constant="20" id="choose-location-leading"/>
+                                            <constraint firstItem="choose-location-button" firstAttribute="top" secondItem="location-value-label" secondAttribute="bottom" constant="8" id="choose-location-top"/>
+                                            <constraint firstAttribute="trailing" secondItem="choose-location-button" secondAttribute="trailing" constant="20" id="choose-location-trailing"/>
+                                            <constraint firstItem="name-label" firstAttribute="leading" secondItem="create-content-view" secondAttribute="leading" constant="20" id="name-lbl-leading"/>
+                                            <constraint firstItem="name-label" firstAttribute="top" secondItem="create-icon" secondAttribute="bottom" constant="20" id="name-lbl-top"/>
+                                            <constraint firstAttribute="trailing" secondItem="name-label" secondAttribute="trailing" constant="20" id="name-lbl-trailing"/>
+                                            <constraint firstItem="name-textfield" firstAttribute="leading" secondItem="create-content-view" secondAttribute="leading" constant="20" id="name-txt-leading"/>
+                                            <constraint firstItem="name-textfield" firstAttribute="top" secondItem="name-label" secondAttribute="bottom" constant="8" id="name-txt-top"/>
+                                            <constraint firstAttribute="trailing" secondItem="name-textfield" secondAttribute="trailing" constant="20" id="name-txt-trailing"/>
+                                            <constraint firstItem="stake-label" firstAttribute="leading" secondItem="create-content-view" secondAttribute="leading" constant="20" id="stake-lbl-leading"/>
+                                            <constraint firstItem="stake-label" firstAttribute="top" secondItem="friends-textfield" secondAttribute="bottom" constant="16" id="stake-lbl-top"/>
+                                            <constraint firstAttribute="trailing" secondItem="stake-label" secondAttribute="trailing" constant="20" id="stake-lbl-trailing"/>
+                                            <constraint firstItem="stake-textfield" firstAttribute="leading" secondItem="create-content-view" secondAttribute="leading" constant="20" id="stake-txt-leading"/>
+                                            <constraint firstItem="stake-textfield" firstAttribute="top" secondItem="stake-label" secondAttribute="bottom" constant="8" id="stake-txt-top"/>
+                                            <constraint firstAttribute="trailing" secondItem="stake-textfield" secondAttribute="trailing" constant="20" id="stake-txt-trailing"/>
+                                            <constraint firstItem="type-label" firstAttribute="leading" secondItem="create-content-view" secondAttribute="leading" constant="20" id="type-lbl-leading"/>
+                                            <constraint firstItem="type-label" firstAttribute="top" secondItem="duration-stack" secondAttribute="bottom" constant="16" id="type-lbl-top"/>
+                                            <constraint firstAttribute="trailing" secondItem="type-label" secondAttribute="trailing" constant="20" id="type-lbl-trailing"/>
+                                            <constraint firstItem="type-segment" firstAttribute="leading" secondItem="create-content-view" secondAttribute="leading" constant="20" id="type-seg-leading"/>
+                                            <constraint firstItem="type-segment" firstAttribute="top" secondItem="type-label" secondAttribute="bottom" constant="8" id="type-seg-top"/>
+                                            <constraint firstAttribute="trailing" secondItem="type-segment" secondAttribute="trailing" constant="20" id="type-seg-trailing"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="create-content-view" secondAttribute="bottom" id="content-bottom"/>
+                                    <constraint firstItem="create-content-view" firstAttribute="leading" secondItem="create-scrollview" secondAttribute="leading" id="content-leading"/>
+                                    <constraint firstItem="create-content-view" firstAttribute="top" secondItem="create-scrollview" secondAttribute="top" id="content-top"/>
+                                    <constraint firstAttribute="trailing" secondItem="create-content-view" secondAttribute="trailing" id="content-trailing"/>
+                                    <constraint firstItem="create-content-view" firstAttribute="width" secondItem="create-scrollview" secondAttribute="width" id="content-width"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="create-safe-area"/>
+                        <color key="backgroundColor" name="AppBackground"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="create-scrollview" secondAttribute="bottom" id="scroll-bottom"/>
+                            <constraint firstItem="create-scrollview" firstAttribute="leading" secondItem="create-safe-area" secondAttribute="leading" id="scroll-leading"/>
+                            <constraint firstItem="create-scrollview" firstAttribute="top" secondItem="create-challenge-view" secondAttribute="top" id="scroll-top"/>
+                            <constraint firstItem="create-safe-area" firstAttribute="trailing" secondItem="create-scrollview" secondAttribute="trailing" id="scroll-trailing"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create Challenge" id="create-nav-item">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="cancel-btn">
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="create-challenge-vc" id="cancel-action"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="challengeNameTextField" destination="name-textfield" id="outlet-name"/>
+                        <outlet property="chooseLocationButton" destination="choose-location-button" id="outlet-choose-location"/>
+                        <outlet property="descriptionTextView" destination="desc-textview" id="outlet-desc"/>
+                        <outlet property="durationStepper" destination="duration-stepper" id="outlet-stepper"/>
+                        <outlet property="durationValueLabel" destination="duration-value-label" id="outlet-dur-value"/>
+                        <outlet property="friendsTextField" destination="friends-textfield" id="outlet-friends"/>
+                        <outlet property="locationLabel" destination="location-value-label" id="outlet-location-label"/>
+                        <outlet property="stakeAmountTextField" destination="stake-textfield" id="outlet-stake"/>
+                        <outlet property="typeSegmentControl" destination="type-segment" id="outlet-type"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="create-challenge-responder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2796" y="1800"/>
+        </scene>
+        <!--Pick Location-->
+        <scene sceneID="pick-location-scene">
+            <objects>
+                <viewController storyboardIdentifier="PickLocationViewController" id="pick-location-vc" customClass="PickLocationViewController" customModule="PuduPranav_ProjectFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pick-location-view">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the map to set the challenge location" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pick-instruction-label">
+                                <rect key="frame" x="20" y="108" width="353" height="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="pick-mapview">
+                                <rect key="frame" x="0.0" y="165" width="393" height="550"/>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pick-bottom-container">
+                                <rect key="frame" x="0.0" y="715" width="393" height="137"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No location selected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pick-coordinate-label">
+                                        <rect key="frame" x="20" y="16" width="353" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pick-save-button">
+                                        <rect key="frame" x="20" y="48" width="353" height="50"/>
+                                        <color key="backgroundColor" name="AppPrimaryBrown"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="pick-save-height"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Save Location">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="AppBackground"/>
+                                <constraints>
+                                    <constraint firstItem="pick-coordinate-label" firstAttribute="leading" secondItem="pick-bottom-container" secondAttribute="leading" constant="20" id="pick-coord-leading"/>
+                                    <constraint firstItem="pick-coordinate-label" firstAttribute="top" secondItem="pick-bottom-container" secondAttribute="top" constant="16" id="pick-coord-top"/>
+                                    <constraint firstAttribute="trailing" secondItem="pick-coordinate-label" secondAttribute="trailing" constant="20" id="pick-coord-trailing"/>
+                                    <constraint firstItem="pick-save-button" firstAttribute="leading" secondItem="pick-bottom-container" secondAttribute="leading" constant="20" id="pick-save-leading"/>
+                                    <constraint firstItem="pick-save-button" firstAttribute="top" secondItem="pick-coordinate-label" secondAttribute="bottom" constant="16" id="pick-save-top"/>
+                                    <constraint firstAttribute="trailing" secondItem="pick-save-button" secondAttribute="trailing" constant="20" id="pick-save-trailing"/>
+                                    <constraint firstAttribute="bottom" secondItem="pick-save-button" secondAttribute="bottom" constant="39" id="pick-save-bottom"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="AppBackground"/>
+                        <constraints>
+                            <constraint firstItem="pick-instruction-label" firstAttribute="leading" secondItem="pick-location-safe-area" secondAttribute="leading" constant="20" id="pick-instruction-leading"/>
+                            <constraint firstItem="pick-instruction-label" firstAttribute="top" secondItem="pick-location-safe-area" secondAttribute="top" constant="20" id="pick-instruction-top"/>
+                            <constraint firstItem="pick-location-safe-area" firstAttribute="trailing" secondItem="pick-instruction-label" secondAttribute="trailing" constant="20" id="pick-instruction-trailing"/>
+                            <constraint firstItem="pick-mapview" firstAttribute="leading" secondItem="pick-location-view" secondAttribute="leading" id="pick-map-leading"/>
+                            <constraint firstItem="pick-mapview" firstAttribute="top" secondItem="pick-instruction-label" secondAttribute="bottom" constant="16" id="pick-map-top"/>
+                            <constraint firstItem="pick-mapview" firstAttribute="trailing" secondItem="pick-location-view" secondAttribute="trailing" id="pick-map-trailing"/>
+                            <constraint firstItem="pick-bottom-container" firstAttribute="top" secondItem="pick-mapview" secondAttribute="bottom" id="pick-bottom-top"/>
+                            <constraint firstItem="pick-bottom-container" firstAttribute="leading" secondItem="pick-location-view" secondAttribute="leading" id="pick-bottom-leading"/>
+                            <constraint firstItem="pick-bottom-container" firstAttribute="trailing" secondItem="pick-location-view" secondAttribute="trailing" id="pick-bottom-trailing"/>
+                            <constraint firstItem="pick-bottom-container" firstAttribute="bottom" secondItem="pick-location-view" secondAttribute="bottom" id="pick-bottom-bottom"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pick-location-safe-area"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pick Location" id="pick-nav-item"/>
+                    <connections>
+                        <outlet property="coordinateLabel" destination="pick-coordinate-label" id="outlet-pick-coord"/>
+                        <outlet property="instructionLabel" destination="pick-instruction-label" id="outlet-pick-instruction"/>
+                        <outlet property="mapView" destination="pick-mapview" id="outlet-pick-map"/>
+                        <outlet property="saveLocationButton" destination="pick-save-button" id="outlet-pick-save"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pick-location-responder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3700" y="1800"/>
+        </scene>
+        <!--Challenge Detail-->
+        <scene sceneID="challenge-detail-scene">
+            <objects>
+                <viewController storyboardIdentifier="ChallengeDetailViewController" id="challenge-detail-vc" customClass="ChallengeDetailViewController" customModule="PuduPranav_ProjectFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="challenge-detail-view">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="AppBackground"/>
+                        <viewLayoutGuide key="safeArea" id="challenge-detail-safe-area"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Challenge Details" id="challenge-detail-nav-item"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="challenge-detail-responder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4600" y="1800"/>
+        </scene>
+        <!--Check-In-->
+        <scene sceneID="checkin-vc-scene">
+            <objects>
+                <viewController storyboardIdentifier="CheckInViewController" id="checkin-vc" customClass="CheckInViewController" customModule="PuduPranav_ProjectFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="checkin-view">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="checkin-mapview">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="511.33333333333331"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locating..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="checkin-distance-label">
+                                <rect key="frame" x="20" y="531.33333333333337" width="353" height="21.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stake: 0 tokens" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="checkin-stake-label">
+                                <rect key="frame" x="20" y="573" width="353" height="19.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="checkin-button">
+                                <rect key="frame" x="40" y="714" width="313" height="50"/>
+                                <color key="backgroundColor" name="AppPrimaryBrown"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="checkin-btn-height"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Confirm Check-In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="checkin-safe-area"/>
+                        <color key="backgroundColor" name="AppBackground"/>
+                        <constraints>
+                            <constraint firstItem="checkin-safe-area" firstAttribute="bottom" secondItem="checkin-button" secondAttribute="bottom" constant="20" id="checkin-btn-bottom"/>
+                            <constraint firstItem="checkin-button" firstAttribute="leading" secondItem="checkin-safe-area" secondAttribute="leading" constant="40" id="checkin-btn-leading"/>
+                            <constraint firstItem="checkin-safe-area" firstAttribute="trailing" secondItem="checkin-button" secondAttribute="trailing" constant="40" id="checkin-btn-trailing"/>
+                            <constraint firstItem="checkin-distance-label" firstAttribute="leading" secondItem="checkin-safe-area" secondAttribute="leading" constant="20" id="checkin-dist-leading"/>
+                            <constraint firstItem="checkin-distance-label" firstAttribute="top" secondItem="checkin-mapview" secondAttribute="bottom" constant="20" id="checkin-dist-top"/>
+                            <constraint firstItem="checkin-safe-area" firstAttribute="trailing" secondItem="checkin-distance-label" secondAttribute="trailing" constant="20" id="checkin-dist-trailing"/>
+                            <constraint firstItem="checkin-mapview" firstAttribute="height" secondItem="checkin-view" secondAttribute="height" multiplier="0.6" id="checkin-map-height"/>
+                            <constraint firstItem="checkin-mapview" firstAttribute="leading" secondItem="checkin-safe-area" secondAttribute="leading" id="checkin-map-leading"/>
+                            <constraint firstItem="checkin-mapview" firstAttribute="top" secondItem="checkin-view" secondAttribute="top" id="checkin-map-top"/>
+                            <constraint firstItem="checkin-safe-area" firstAttribute="trailing" secondItem="checkin-mapview" secondAttribute="trailing" id="checkin-map-trailing"/>
+                            <constraint firstItem="checkin-stake-label" firstAttribute="leading" secondItem="checkin-safe-area" secondAttribute="leading" constant="20" id="checkin-stake-leading"/>
+                            <constraint firstItem="checkin-stake-label" firstAttribute="top" secondItem="checkin-distance-label" secondAttribute="bottom" constant="20" id="checkin-stake-top"/>
+                            <constraint firstItem="checkin-safe-area" firstAttribute="trailing" secondItem="checkin-stake-label" secondAttribute="trailing" constant="20" id="checkin-stake-trailing"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Check-In" id="checkin-nav-item"/>
+                    <connections>
+                        <outlet property="checkInButton" destination="checkin-button" id="outlet-checkin-btn"/>
+                        <outlet property="distanceLabel" destination="checkin-distance-label" id="outlet-checkin-dist"/>
+                        <outlet property="mapView" destination="checkin-mapview" id="outlet-checkin-map"/>
+                        <outlet property="stakeLabel" destination="checkin-stake-label" id="outlet-checkin-stake"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="checkin-responder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3684" y="1800"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="profile-vc-scene">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="profile-vc" customClass="ProfileViewController" customModule="PuduPranav_ProjectFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="profile-view">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="profile-imageview">
+                                <rect key="frame" x="121.66666666666669" y="158" width="150" height="150"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="profile-img-height"/>
+                                    <constraint firstAttribute="width" constant="150" id="profile-img-width"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="75"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" name="AppPrimaryBrown"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="profile-name-label">
+                                <rect key="frame" x="20" y="328" width="353" height="28.666666666666686"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email@example.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="profile-email-label">
+                                <rect key="frame" x="20" y="366.66666666666669" width="353" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tokens: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="profile-tokens-label">
+                                <rect key="frame" x="20" y="407" width="353" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="profile-edit-btn">
+                                <rect key="frame" x="40" y="471" width="313" height="50"/>
+                                <color key="backgroundColor" name="AppPrimaryBrown"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="profile-edit-height"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Edit Profile">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="profile-safe-area"/>
+                        <color key="backgroundColor" name="AppBackground"/>
+                        <constraints>
+                            <constraint firstItem="profile-edit-btn" firstAttribute="leading" secondItem="profile-safe-area" secondAttribute="leading" constant="40" id="profile-edit-leading"/>
+                            <constraint firstItem="profile-edit-btn" firstAttribute="top" secondItem="profile-tokens-label" secondAttribute="bottom" constant="40" id="profile-edit-top"/>
+                            <constraint firstItem="profile-safe-area" firstAttribute="trailing" secondItem="profile-edit-btn" secondAttribute="trailing" constant="40" id="profile-edit-trailing"/>
+                            <constraint firstItem="profile-email-label" firstAttribute="leading" secondItem="profile-safe-area" secondAttribute="leading" constant="20" id="profile-email-leading"/>
+                            <constraint firstItem="profile-email-label" firstAttribute="top" secondItem="profile-name-label" secondAttribute="bottom" constant="10" id="profile-email-top"/>
+                            <constraint firstItem="profile-safe-area" firstAttribute="trailing" secondItem="profile-email-label" secondAttribute="trailing" constant="20" id="profile-email-trailing"/>
+                            <constraint firstItem="profile-imageview" firstAttribute="centerX" secondItem="profile-view" secondAttribute="centerX" id="profile-img-centerX"/>
+                            <constraint firstItem="profile-imageview" firstAttribute="top" secondItem="profile-safe-area" secondAttribute="top" constant="40" id="profile-img-top"/>
+                            <constraint firstItem="profile-name-label" firstAttribute="leading" secondItem="profile-safe-area" secondAttribute="leading" constant="20" id="profile-name-leading"/>
+                            <constraint firstItem="profile-name-label" firstAttribute="top" secondItem="profile-imageview" secondAttribute="bottom" constant="20" id="profile-name-top"/>
+                            <constraint firstItem="profile-safe-area" firstAttribute="trailing" secondItem="profile-name-label" secondAttribute="trailing" constant="20" id="profile-name-trailing"/>
+                            <constraint firstItem="profile-tokens-label" firstAttribute="leading" secondItem="profile-safe-area" secondAttribute="leading" constant="20" id="profile-tokens-leading"/>
+                            <constraint firstItem="profile-tokens-label" firstAttribute="top" secondItem="profile-email-label" secondAttribute="bottom" constant="20" id="profile-tokens-top"/>
+                            <constraint firstItem="profile-safe-area" firstAttribute="trailing" secondItem="profile-tokens-label" secondAttribute="trailing" constant="20" id="profile-tokens-trailing"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="profile-nav-item"/>
+                    <connections>
+                        <outlet property="editButton" destination="profile-edit-btn" id="outlet-profile-edit"/>
+                        <outlet property="emailLabel" destination="profile-email-label" id="outlet-profile-email"/>
+                        <outlet property="nameLabel" destination="profile-name-label" id="outlet-profile-name"/>
+                        <outlet property="profileImageView" destination="profile-imageview" id="outlet-profile-img"/>
+                        <outlet property="tokensLabel" destination="profile-tokens-label" id="outlet-profile-tokens"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="profile-responder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2796" y="3000"/>
+        </scene>
+        <!--Edit Profile-->
+        <scene sceneID="editprofile-vc-scene">
+            <objects>
+                <viewController storyboardIdentifier="EditProfileViewController" id="editprofile-vc" customClass="EditProfileViewController" customModule="PuduPranav_ProjectFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="editprofile-view">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="editprofile-imageview">
+                                <rect key="frame" x="121.66666666666669" y="138" width="150" height="150"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="editprofile-img-height"/>
+                                    <constraint firstAttribute="width" constant="150" id="editprofile-img-width"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="75"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" name="AppPrimaryBrown"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="editprofile-changephoto-btn">
+                                <rect key="frame" x="145" y="308" width="103" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Change Photo">
+                                    <color key="titleColor" name="AppPrimaryBrown"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="editprofile-firstname-label">
+                                <rect key="frame" x="40" y="360" width="313" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="editprofile-firstname-txt">
+                                <rect key="frame" x="40" y="388.33333333333331" width="313" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="editprofile-firstname-height"/>
+                                </constraints>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" textContentType="given-name"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="editprofile-lastname-label">
+                                <rect key="frame" x="40" y="452.33333333333331" width="313" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="editprofile-lastname-txt">
+                                <rect key="frame" x="40" y="480.66666666666669" width="313" height="44.000000000000057"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="editprofile-lastname-height"/>
+                                </constraints>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" textContentType="family-name"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="editprofile-phone-label">
+                                <rect key="frame" x="40" y="544.66666666666663" width="313" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="editprofile-phone-txt">
+                                <rect key="frame" x="40" y="573" width="313" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="editprofile-phone-height"/>
+                                </constraints>
+                                <color key="textColor" name="AppPrimaryBrown"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="editprofile-save-btn">
+                                <rect key="frame" x="40" y="657" width="313" height="50"/>
+                                <color key="backgroundColor" name="AppPrimaryBrown"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="editprofile-save-height"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Save Changes">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="editprofile-safe-area"/>
+                        <color key="backgroundColor" name="AppBackground"/>
+                        <constraints>
+                            <constraint firstItem="editprofile-changephoto-btn" firstAttribute="centerX" secondItem="editprofile-view" secondAttribute="centerX" id="editprofile-changephoto-centerX"/>
+                            <constraint firstItem="editprofile-changephoto-btn" firstAttribute="top" secondItem="editprofile-imageview" secondAttribute="bottom" constant="20" id="editprofile-changephoto-top"/>
+                            <constraint firstItem="editprofile-firstname-label" firstAttribute="leading" secondItem="editprofile-safe-area" secondAttribute="leading" constant="40" id="editprofile-firstname-lbl-leading"/>
+                            <constraint firstItem="editprofile-firstname-label" firstAttribute="top" secondItem="editprofile-changephoto-btn" secondAttribute="bottom" constant="20" id="editprofile-firstname-lbl-top"/>
+                            <constraint firstItem="editprofile-safe-area" firstAttribute="trailing" secondItem="editprofile-firstname-label" secondAttribute="trailing" constant="40" id="editprofile-firstname-lbl-trailing"/>
+                            <constraint firstItem="editprofile-firstname-txt" firstAttribute="leading" secondItem="editprofile-safe-area" secondAttribute="leading" constant="40" id="editprofile-firstname-leading"/>
+                            <constraint firstItem="editprofile-firstname-txt" firstAttribute="top" secondItem="editprofile-firstname-label" secondAttribute="bottom" constant="8" id="editprofile-firstname-top"/>
+                            <constraint firstItem="editprofile-safe-area" firstAttribute="trailing" secondItem="editprofile-firstname-txt" secondAttribute="trailing" constant="40" id="editprofile-firstname-trailing"/>
+                            <constraint firstItem="editprofile-imageview" firstAttribute="centerX" secondItem="editprofile-view" secondAttribute="centerX" id="editprofile-img-centerX"/>
+                            <constraint firstItem="editprofile-imageview" firstAttribute="top" secondItem="editprofile-safe-area" secondAttribute="top" constant="20" id="editprofile-img-top"/>
+                            <constraint firstItem="editprofile-lastname-label" firstAttribute="leading" secondItem="editprofile-safe-area" secondAttribute="leading" constant="40" id="editprofile-lastname-lbl-leading"/>
+                            <constraint firstItem="editprofile-lastname-label" firstAttribute="top" secondItem="editprofile-firstname-txt" secondAttribute="bottom" constant="20" id="editprofile-lastname-lbl-top"/>
+                            <constraint firstItem="editprofile-safe-area" firstAttribute="trailing" secondItem="editprofile-lastname-label" secondAttribute="trailing" constant="40" id="editprofile-lastname-lbl-trailing"/>
+                            <constraint firstItem="editprofile-lastname-txt" firstAttribute="leading" secondItem="editprofile-safe-area" secondAttribute="leading" constant="40" id="editprofile-lastname-leading"/>
+                            <constraint firstItem="editprofile-lastname-txt" firstAttribute="top" secondItem="editprofile-lastname-label" secondAttribute="bottom" constant="8" id="editprofile-lastname-top"/>
+                            <constraint firstItem="editprofile-safe-area" firstAttribute="trailing" secondItem="editprofile-lastname-txt" secondAttribute="trailing" constant="40" id="editprofile-lastname-trailing"/>
+                            <constraint firstItem="editprofile-phone-label" firstAttribute="leading" secondItem="editprofile-safe-area" secondAttribute="leading" constant="40" id="editprofile-phone-lbl-leading"/>
+                            <constraint firstItem="editprofile-phone-label" firstAttribute="top" secondItem="editprofile-lastname-txt" secondAttribute="bottom" constant="20" id="editprofile-phone-lbl-top"/>
+                            <constraint firstItem="editprofile-safe-area" firstAttribute="trailing" secondItem="editprofile-phone-label" secondAttribute="trailing" constant="40" id="editprofile-phone-lbl-trailing"/>
+                            <constraint firstItem="editprofile-phone-txt" firstAttribute="leading" secondItem="editprofile-safe-area" secondAttribute="leading" constant="40" id="editprofile-phone-leading"/>
+                            <constraint firstItem="editprofile-phone-txt" firstAttribute="top" secondItem="editprofile-phone-label" secondAttribute="bottom" constant="8" id="editprofile-phone-top"/>
+                            <constraint firstItem="editprofile-safe-area" firstAttribute="trailing" secondItem="editprofile-phone-txt" secondAttribute="trailing" constant="40" id="editprofile-phone-trailing"/>
+                            <constraint firstItem="editprofile-save-btn" firstAttribute="leading" secondItem="editprofile-safe-area" secondAttribute="leading" constant="40" id="editprofile-save-leading"/>
+                            <constraint firstItem="editprofile-save-btn" firstAttribute="top" secondItem="editprofile-phone-txt" secondAttribute="bottom" constant="40" id="editprofile-save-top"/>
+                            <constraint firstItem="editprofile-safe-area" firstAttribute="trailing" secondItem="editprofile-save-btn" secondAttribute="trailing" constant="40" id="editprofile-save-trailing"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Profile" id="editprofile-nav-item"/>
+                    <connections>
+                        <outlet property="changePhotoButton" destination="editprofile-changephoto-btn" id="outlet-editprofile-changephoto"/>
+                        <outlet property="firstNameTextField" destination="editprofile-firstname-txt" id="outlet-editprofile-firstname"/>
+                        <outlet property="lastNameTextField" destination="editprofile-lastname-txt" id="outlet-editprofile-lastname"/>
+                        <outlet property="phoneTextField" destination="editprofile-phone-txt" id="outlet-editprofile-phone"/>
+                        <outlet property="profileImageView" destination="editprofile-imageview" id="outlet-editprofile-img"/>
+                        <outlet property="saveButton" destination="editprofile-save-btn" id="outlet-editprofile-save"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="editprofile-responder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3684" y="3000"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bell.fill" catalog="system" width="123" height="128"/>
+        <image name="creditcard" catalog="system" width="128" height="88"/>
+        <image name="dumbbell" catalog="system" width="128" height="72"/>
+        <image name="dumbbell.fill" catalog="system" width="128" height="72"/>
+        <image name="flame" catalog="system" width="106" height="128"/>
+        <image name="gear" catalog="system" width="128" height="122"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="moon.fill" catalog="system" width="128" height="123"/>
+        <image name="person.2" catalog="system" width="128" height="87"/>
+        <image name="person.2.circle" catalog="system" width="128" height="123"/>
+        <namedColor name="AppBackground">
+            <color red="0.98799997568130493" green="0.93699997663497925" blue="0.88999998569488525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppPrimaryBrown">
+            <color red="0.43500000238418579" green="0.2669999897480011" blue="0.18799999356269836" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
